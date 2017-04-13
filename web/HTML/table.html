@@ -305,6 +305,7 @@
             ];
 
             // Configuration for jqGrid Example 2
+
             $("#table_list_2").jqGrid({
                 data: mydata,
                 datatype: "local",
@@ -313,13 +314,13 @@
                 shrinkToFit: true,
                 rowNum: 20,
                 rowList: [10, 20, 30],
-                colNames: ['序号', '日期', '客户', '金额', '运费', '总额', '备注'],
+                colNames: ['日志id', '二维码码值', '扫描时间', '地理位置', '交集角点数', '交集角点率', '清晰度', '对比结果', '真假类型'],
                 colModel: [
                     {
                         name: 'id',
                         index: 'id',
                         editable: true,
-                        width: 60,
+                        width: 30,
                         sorttype: "int",
                         search: true
                     },
@@ -328,12 +329,14 @@
                         index: 'invdate',
                         editable: true,
                         width: 90,
+                        align: "center",
                         sorttype: "date",
                         formatter: "date"
                     },
                     {
                         name: 'name',
                         index: 'name',
+                        align: "center",
                         editable: true,
                         width: 100
                     },
@@ -342,7 +345,7 @@
                         index: 'amount',
                         editable: true,
                         width: 80,
-                        align: "right",
+                        align: "center",
                         sorttype: "float",
                         formatter: "number"
                     },
@@ -350,29 +353,47 @@
                         name: 'tax',
                         index: 'tax',
                         editable: true,
-                        width: 80,
-                        align: "right",
+                        width: 50,
+                        align: "center",
                         sorttype: "float"
                     },
                     {
                         name: 'total',
                         index: 'total',
                         editable: true,
-                        width: 80,
-                        align: "right",
+                        width: 50,
+                        align: "center",
                         sorttype: "float"
                     },
                     {
                         name: 'note',
                         index: 'note',
                         editable: true,
-                        width: 100,
+                        width: 50,
+                        align: "center",
+                        sortable: false
+                    },
+                    {
+                        name: 'note',
+                        index: 'note',
+                        editable: true,
+                        width: 50,
+                        align: "center",
+                        sortable: false
+                    },
+                    {
+                        name: 'note',
+                        index: 'note',
+                        editable: true,
+                        width: 50,
+                        align: "center",
                         sortable: false
                     }
+
                 ],
                 pager: "#pager_list_2",
                 viewrecords: true,
-                caption: "jqGrid 示例2",
+                caption: "日志信息列表",
                 add: true,
                 edit: true,
                 addtext: 'Add',
@@ -389,6 +410,14 @@
             }, {
                 height: 200,
                 reloadAfterSubmit: true
+            }).navButtonAdd('#pager_list_2',{
+                caption:"Add",
+                buttonicon:"ui-icon-add",
+                onClickButton: function(){
+                    alert("Adding Row");
+                },
+                osition:"last"
+
             });
 
             // Add responsive to jqGrid
@@ -396,7 +425,10 @@
                 var width = $('.jqGrid_wrapper').width();
                 $('#table_list_2').setGridWidth(width);
             });
+            $("#table_list_2").css("text-align", "center");
+            console.log($("#table_list_2"));
         });
+
     </script>
 
     

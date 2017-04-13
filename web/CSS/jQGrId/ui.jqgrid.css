@@ -135,6 +135,7 @@
 .ui-jqgrid .ui-single-sort-desc {}
 .ui-jqgrid .ui-jqgrid-sortable {
 	cursor:pointer;
+	text-align: center;
 }
 .ui-jqgrid tr.ui-search-toolbar th { }
 .ui-jqgrid .ui-search-table td.ui-search-clear { }
@@ -320,7 +321,7 @@ div.tablediv > .table-bordered {
 	border-top: 2px solid #ccc ;  //default
 	margin: 0; padding: 0; width:100%
 }
-.ui-jqgrid .ui-jqgrid-pager .ui-pg-div,
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-divui-jqgrid-sortable,
 .ui-jqgrid .ui-jqgrid-toppager .ui-pg-div
 {
 	float:left;
