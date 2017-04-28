@@ -1,0 +1,100 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+/*顶部导航栏*/
+.cancel-bottom-margin {
+    margin-bottom: 0;
+    min-width: 1210px;
+}
+/*左侧菜单栏*/
+.nav_left {
+    width: 240px;
+    height: 1000px;
+    /*margin-top: -15px;*/
+    background-color: #324355;
+}
+.nav-useinfo {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.nav-useinfo img {
+
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    border: 2px solid #f7e1b5;
+}
+.nav-useinfo p {
+    position: absolute;
+    top: 28px;
+    left: 95px;
+    color: lightgrey;
+}
+.nav-useinfo b {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    width: 140px;
+    color: white;
+    display: block;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+/*list 列表*/
+.panel-group {
+    margin-top: 5px;
+}
+.panel-title a {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.panel-title span {
+    position: absolute;
+    float: right;
+    top:12px;
+    right: 10px;
+}
+.cancel-padding {
+    padding: 0;
+    background-color: #324355;
+}
+.left-boder {
+    border: 0;
+    /*border-right: 2px solid indianred;*/
+}
+.panel-body ul {
+    background-color: #324355;
+}
+.panel-body li {
+    width: 100%;
+    height: 35px;
+    margin-top: 3px;
+}
+.panel-body a {
+    width: 100%;
+    height: 35px;
+    color: white;
+    display: block;
+    line-height: 35px;
+    padding-left: 15px;
+    text-decoration: none;
+}
+.panel-body a:hover {
+    color: black;
+    border-right: 5px solid indianred;
+    background-color: whitesmoke;
+}
+
+
+
+
