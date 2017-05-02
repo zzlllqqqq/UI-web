@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Dashboard Template for Bootstrap</title>
+    <!--jQuery包-->
+    <script src="../JS/jquery-1.11.1.js"></script>
+    <!--bootstrap包-->
+    <script src="../JS/bootstrap/js/bootstrap.js"></script>
+    <!--bootstrap样式-->
+    <link rel="stylesheet" href="../JS/bootstrap/css/bootstrap.css">
+    <!--bootstrap主题包-->
+    <link rel="stylesheet" href="../JS/bootstrap/css/bootstrap-theme.css">
+    <!--bootstrap折叠类库-->
+    <script src="../JS/collapse.js"></script>
+
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/base.css">
+
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default cancel-bottom-margin">
+    <div class="container-fluid" >
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <p class="navbar-text">K 防伪服务管理平台</p>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- /.container-fluid -->
+</nav>
+<!--左侧菜单栏-->
+<div class="nav_left">
+    <!--用户信息-->
+    <div class="nav-useinfo">
+        <img src="../Resources/userinfo.png" height="60px" width="60px"/>
+        <p>Welcome ,</p>
+        <b>管理员</b>
+    </div>
+    <!--list列表-->
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default left-boder">
+            <div class="panel-heading cancel-padding" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Item #1
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </a>
+
+                </h4>
+
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body cancel-padding">
+                    <!--子菜单-->
+                    <ul>
+                        <li><a href="#">标签型号列表</a></li>
+                        <li><a href="#">标签型号列表</a></li>
+                        <li><a href="#">标签型号列表</a></li>
+                        <li><a href="#">标签型号列表</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="panel panel-default left-boder">
+            <div class="panel-heading cancel-padding" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Item #2
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body cancel-padding">
+                    <!--子菜单-->
+                    <ul>
+                        <li><a href="#">标签型号列表</a></li>
+                        <li><a href="#">标签型号列表</a></li>
+                        <li><a href="#">标签型号列表</a></li>
+                        <li><a href="#">标签型号列表</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="panel panel-default left-boder">
+            <div class="panel-heading cancel-padding" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Item #3
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body cancel-padding">
+
+                    <!--子菜单-->
+                    <ul>
+                        <li><a href="#">标签型号列表</a></li>
+                        <li><a href="#">标签型号列表</a></li>
+                        <li><a href="#">标签型号列表</a></li>
+                        <li><a href="#">标签型号列表</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--右侧容器-->
+<div class="container-fluid">
+
+</div>
+
+
+
+</body>
+</html>
