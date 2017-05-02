@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../CSS/dailyRecord.css">
+  <link rel="stylesheet" href="../CSS/bootstrap.css">
+  <link rel="stylesheet" href="../CSS/bootstrap-table.min.css">
+  <script src="../JS/laydate/laydate.js"></script>
+  <script src="../JS/jquery-1.11.1.js"></script>
+  <script src="../JS/bootstrap-table.min.js"></script>
+</head>
+<body>
+  <div class="table">
+    <!--搜索栏-->
+    <div class="table-search">
+      <!---->
+      <div class="table-search-div table-search-div-input">
+        <span>标签id:</span>
+        <input type="text" class="table-search-input" placeholder="请输入id"/>
+        <span>手机id:</span>
+        <input type="text" class="table-search-input" placeholder="请输入手机id"/>
+        <span>二维码:</span>
+        <input type="text" class="table-search-input" placeholder="请输入二维码"/>
+        <span>设备类型:</span>
+        <input type="text" class="table-search-input" placeholder="请输入设备类型"/>
+        <span>地理位置:</span>
+        <input type="text" class="table-search-input" placeholder="请输入地理位置"/>
+      </div>
+      <!---->
+      <div class="table-search-div">
+        <span>对比结果:</span>
+        <div class="table-select-div">
+          <select class="form-control">
+            <option>选项 1</option>
+            <option>选项 2</option>
+            <option>选项 3</option>
+            <option>选项 4</option>
+          </select>
+        </div>
+        <span>扫描模式:</span>
+        <div class="table-select-div">
+          <select class="form-control">
+            <option>选项 1</option>
+            <option>选项 2</option>
+            <option>选项 3</option>
+            <option>选项 4</option>
+          </select>
+        </div>
+        <span>真假类型:</span>
+        <div class="table-select-div">
+          <select class="form-control">
+            <option>选项 1</option>
+            <option>选项 2</option>
+            <option>选项 3</option>
+            <option>选项 4</option>
+          </select>
+        </div>
+      </div>
+      <!---->
+      <div class="table-search-div">
+        <span>开始时间:</span>
+        <input class="form-control layer-date date" placeholder="开始时间"
+               onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+        <span>结束时间:</span>
+        <input class="form-control layer-date date" placeholder="结束时间"
+               onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+        <a href="javascript:void(0)">查询</a>
+        <a href="javascript:void(0)">导出图片</a>
+        <a href="javascript:void(0)">导出日志</a>
+      </div>
+
+    </div>
+
+    <!--table-->
+
+
+  </div>
+  <script>
+
+    $(document).ready(function () {
+      // Examle data for jqGrid
+
+      // Configuration for jqGrid Example 2
+
+
+      //按钮的点击效果
+      $(".table-search-div > a").mousedown(function () {
+        $(this).css({
+          "backgroundColor":"#166cbf",
+          "color":"#fff"
+        })
+      });
+      $(".table-search-div > a").mouseup(function () {
+        $(this).css({
+          "backgroundColor":"#1e90ff",
+          "color":"#fff"
+        })
+      });
+    });
+  </script>
+
+</body>
+</html>
